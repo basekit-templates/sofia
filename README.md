@@ -1,4 +1,4 @@
-sofia
-=====
+Sofia
+======
 
-Sofia BaseKit Template
+BaseKit's Sofia Template
