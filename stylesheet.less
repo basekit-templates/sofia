@@ -536,6 +536,10 @@ footer .widget.content .bk-content-text p {
 
 /* Lightbox */
 
+.lb-outerContainer {
+  margin: 50px auto 0;
+}
+
 .lightboxOverlay {
   background-color: @color-swatch1;
   opacity: 1;
@@ -1693,13 +1697,25 @@ footer .widget.profile .twitter span {
         margin: 0 auto;
     }
 
+    .widget.companyname {
+        margin: 1px 0 0 5px;
+    }
+
+    .widget.companyname a {
+      font-size: bkscale(@font-swatch10-font-size,0.9);
+      line-height: bkscale(@font-swatch10-color,0.9);
+    }
+
+
     /* NAV */
 
 
     .widget.extendednavigation {
         display: block;
-        width: 100%;
+        width: 50px;
+        height: 50px;
         margin-top: 0px;
+        float: right;
     }
 
      /* NAV ICON */
@@ -1708,7 +1724,7 @@ footer .widget.profile .twitter span {
     display: block;
     width: 100%;
     position: absolute;
-    top: 20px;
+    top: 25px;
   }
 
     .widget .extendednavigation a.pull:after {
@@ -1719,7 +1735,7 @@ footer .widget.profile .twitter span {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: -50px;
+    top: 0;
   }
 
   /* NAV */
@@ -1836,6 +1852,10 @@ footer .widget.profile .twitter span {
 
 @media only screen and (max-width: 480px) { 
 
+  header {
+margin: 20px 0 26px;
+}
+
     footer {
       text-align: center;
         padding: 2.5em 0 0;
@@ -1849,6 +1869,25 @@ footer .widget.profile .twitter span {
    footer .widget.content .bk-content-text p {
   color: @color-swatch6;
   text-align: center;
+}
+
+
+
+.lb-outerContainer {
+  margin: 0 auto;
+}
+
+.companyheader {
+padding-top: 12px;
+}
+
+.widget.companyname {
+margin: 1px 0 0 5px;
+}
+
+.widget.companyname a {
+  font-size: bkscale(@font-swatch10-font-size,0.7);
+  line-height: bkscale(@font-swatch10-color,0.7);
 }
 
 
