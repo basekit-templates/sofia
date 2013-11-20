@@ -1720,16 +1720,26 @@ footer .widget.profile .twitter span {
     }
 
 
-    /* NAV */
+  /* Nav overlay on editor */
 
 
-    .widget.extendednavigation {
-        display: block;
-        width: 50px;
-        height: 50px;
-        margin-top: 0px;
-        float: right;
+    #page-zones__template-widgets__extendednavigation-navigationheader-bk-overlay {
+      width: 150px;
+      top: -100px !important;
+      left: 85% !important;
+      float: right !important;
+      height: 100px;
     }
+
+   /* NAV */
+
+
+  .widget.extendednavigation {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      float: right;
+  }
 
      /* NAV ICON */
 
@@ -1737,7 +1747,7 @@ footer .widget.profile .twitter span {
     display: block;
     width: 100%;
     position: absolute;
-    top: 25px;
+    top: -52px;
   }
 
     .widget .extendednavigation a.pull:after {
