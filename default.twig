@@ -4,29 +4,30 @@
 
 <div class="bk-pt-default">
 
-<header>
+<header class="bk-header">
     <div class="wrapper clearfix">
         <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
+          {% if pages|length > 1 %}
             {{widget('extendednavigation', 'navigationheader', {})|raw}}
+          {% endif %}
     </div>
 </header>
-
 
 <div class="main wrapper clearfix">
  {{zone('main')|raw}}
 </div>  
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="responsivecolumns columns-two-50-50">
            <div class="column columns-two-left">
-                {{widget('content', 'footercolumn1content', {content: 'This is a content widget.', lines: 'all'})|raw}}
+                {{widget('content', 'footercolumn1content', {content: 'Lorum ipsum dolor', lines: 'all'})|raw}}
            </div>
            <div class="column columns-two-right">
-                 {{widget('content', 'footercolumn2content', {content: 'This is a content widget.', lines: 'all'})|raw}}
+                 {{widget('content', 'footercolumn2content', {content: 'Lorum ipsum dolor', lines: 'all'})|raw}}
            </div>
         </div>
     </div>
