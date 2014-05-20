@@ -2,6 +2,7 @@
 	"name":"Sofia",
 	"thumbnail":"sofia.png",
 	"screenshot":"sofia.png",
+	"templateType":"standard",
     "tags": {
     "en": ["photography", "modern", "open", "simple", "creative", "serif", "independent", "art", "portfolio", "design"],
     "es": ["fotografico", "moderno", "abierto", "simple", "creativo", "serif", "independiente", "arte", "portafolio", "diseño"],
