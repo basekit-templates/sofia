@@ -174,9 +174,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 .widget.extendednavigation {
-    float: right;
     position: relative;
-    width: 70%;
     margin: 5px 0;
 }
 
@@ -207,8 +205,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.extendednavigation ul li {
-    float: left;
-    display: block;
+    display: inline-block;
 }
 
 .widget.extendednavigation ul li a {
@@ -279,7 +276,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     display: block;
     color: @color-swatch5;
     padding: 0;
-    text-align: left;
 }
 
 /* EXTENDED NAVIGATION - INSIDE ZONE */
@@ -287,7 +283,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .main .widget.extendednavigation {
     max-width: 100%;
     width: 100%;
-    float: none;
 }
 
 .main .widget.extendednavigation:before,
@@ -1980,12 +1975,19 @@ hr.line {
 
    /* NAV */
 
+   .widget .extendednavigation a.pull {
+    top: 5px;
+   }
+
+   .widget .extendednavigation ul.align-right li.folder:after {
+      left: 5px;
+      right: inherit;
+  }
 
   .widget.extendednavigation {
       display: block;
       width: 100%;
       margin-top: 20px;
-      float: right;
   }
 
  .widget .extendednavigation ul {
@@ -2024,7 +2026,6 @@ hr.line {
   .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
       padding: 5px 0;
       margin: 0;
-      text-align: left;
   }
 
   .widget.extendednavigation ul li > ul {
@@ -2064,7 +2065,7 @@ hr.line {
   }
 
   .widget.extendednavigation li:hover > ul > li > a {
-    padding-left: 10px;
+    padding: 0 10px;
   }
 
    /* GALLERY */
