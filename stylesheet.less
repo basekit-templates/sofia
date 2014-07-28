@@ -47,14 +47,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     padding: 0;
 }
 
-/* COMPANY NAME */
-
-.widget.companyname {
-  display: block;
-  float: left;
-  margin: 0 0 0 5px;
-}
-
 .companyname a:hover {
   text-decoration: none;
 }
@@ -68,12 +60,21 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   font-size: @font-swatch10-font-size;
 }
 
+.widget {
+    &.logo, &.companyname {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
 /* LOGO */
 
 .widget.logo {
-  display: block;
-  float: left;
-  padding-left: 5px;
+  padding-right: 7px;
+  padding-left: 0;
+  .logo img {
+    padding-top: 7px;
+  }
 }
 
 /* ===============================
@@ -175,7 +176,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .widget.extendednavigation {
     position: relative;
-    margin: 5px 0;
+    margin: 20px -20px;
 }
 
 .widget.extendednavigation a.pull {
@@ -1948,8 +1949,8 @@ hr.line {
         padding-bottom: 0;
     }
 
-    .widget.companyheader {
-        width: 100%;
+    .companyheader {
+        width: 90%;
         display: block;
         margin: 0 auto;
     }
@@ -1987,7 +1988,7 @@ hr.line {
   .widget.extendednavigation {
       display: block;
       width: 100%;
-      margin-top: 20px;
+      margin: 20px 0 0;
   }
 
  .widget .extendednavigation ul {
