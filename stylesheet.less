@@ -232,6 +232,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     letter-spacing: @font-swatch6-letter-spacing;
   }
 
+.widget.extendednavigation ul li.folder ul li .text {
+  padding: 10px;
+}
+
 .widget.extendednavigation ul li a:hover,
 .widget.extendednavigation ul li.folder .text:hover {
     color: @font-swatch6-color-hover;
@@ -282,14 +286,14 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* Selected state */
 
+.extendednavigation ul li.folder.selected ul li .text {
+    color: @font-swatch6-color;
+}
+
 .extendednavigation ul li.selected, .extendednavigation ul li:hover ul li.selected, .extendednavigation ul li.folder.selected ul li.selected, .extendednavigation ul li.folder.selected {
     a, .text {
         color: @font-swatch6-color-hover;
     }
-}
-
-.extendednavigation ul li.folder.selected ul li .text {
-    color: @font-swatch6-color-hover;
 }
 
 /* EXTENDED NAVIGATION - INSIDE ZONE */
