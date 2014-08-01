@@ -1093,7 +1093,7 @@ footer .widget.profile .twitter span {
 
 .widget {
     &.menusections {
-        margin: 1em 0;
+        margin: 0 0 1em;
         @media @tablet {
             border: none;
             margin: 2em 0 1em;
@@ -1134,11 +1134,10 @@ footer .widget.profile .twitter span {
                         text-decoration: none;
                     }
                     &:after {
-                        content: "\00b0";
-                        color: fade(@color-swatch5, 25%);
+                        content: "\25CF";
+                        color: fade(@color-swatch5,20%);
                         padding-left: 1.5em;
                         position: relative;
-                        top: 4px;
                         @media @tablet {
                             display: none;
                         }
