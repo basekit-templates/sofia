@@ -357,8 +357,32 @@ border-radius: 0;
 }
 
 /* ===============================
-   DROPBOX BUTTON
+  BUTTONS
    =============================== */
+
+/* Standard Button */
+
+.widget.button button, .blog-post-pagination-page {
+  padding: 9px 22px;
+  margin: 0 0 10px;
+  border: none;
+  .border-radius(3px);
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  text-decoration: none;
+}
+
+
+.widget.button button:hover, .blog-post-pagination-page:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Drop Box */
 
 .widget.dropbox .b-wrap .btn {
   margin: 0;
@@ -383,19 +407,7 @@ border-radius: 0;
   background-color: @font-swatch7-background-color-hover;
 }
 
-.widget.dropbox .b-wrap .file-name {
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height: @font-swatch5-line-height;
-  color: @font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-  padding-left: 5px;
-}
-
-/* ===============================
-   PAYPAL BUTTON
-   =============================== */
+/* PAYPAL BUTTON */
 
 .widget.paypalbuynow .widget.button.paypal {
   margin: 0;
@@ -420,28 +432,81 @@ border-radius: 0;
   background-color: @font-swatch7-background-color-hover;
 }
 
-/* ===============================
-   BUTTON CSS
-   =============================== */
+/* TWEET THIS */
 
-.widget.button button {
-  padding: 9px 22px;
-  margin: 0 0 10px;
+.widget.tweet .tweet {
   border: none;
-  .border-radius(3px);
+  margin: 10px 0;
+}
+
+.widget.tweet a {
+  padding: 14px 22px 14px 45px;
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
   font-weight:@font-swatch7-font-weight;
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
+  letter-spacing: 1px;
+  .border-radius(3px);
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: 20px center;
 }
 
-
-.widget.button button:hover {
-  background-color: @font-swatch7-background-color-hover;
+.widget.tweet a:hover, .tweet a:active {
   cursor: pointer;
+  background-color: @font-swatch7-background-color-hover;
 }
+
+/* CLICK TO CALL */
+
+.widget.clicktocall {
+    padding: 8px 0
+}
+
+.widget.clicktocall a {
+    padding: 10px 0;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+    text-decoration: none;
+}
+
+.widget.clicktocall a:hover {
+    cursor: pointer;
+}
+
+@media @mobile {
+    .widget.clicktocall {
+        padding: 10px 0;
+        display: block;
+        a {
+            background-position: 20px center;
+            padding: 14px 20px 14px 47px;
+            margin: 2.2em auto;
+            .border-radius(3px);
+            border: none;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight:@font-swatch7-font-weight;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
+            text-decoration: none;
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+                background-position: 20px center;
+                cursor: pointer;
+                padding: 14px 20px 14px 47px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
 
 /* ===============================
    LINE WIDGET
@@ -453,7 +518,6 @@ hr.line {
    width: 100%;
    border: none;
 }
-
 
 /* ===============================
    TWITTER FULL
@@ -547,33 +611,11 @@ ul.twitter {
   text-decoration: underline;
 }
 
-
-/* =======================================
-   CLICK TO CALL
-   ==================================== */
-
-.widget.clicktocall {
-    padding: 8px 0
-}
-
-.widget.clicktocall a {
-    padding: 10px 0;
-    font-family: @font-swatch5-font-family;
-    font-size: @font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height: @font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-    text-decoration: none;
-}
-
-.widget.clicktocall a:hover {
-    cursor: pointer;
-}
-
 /* ===============================
-   CONTACT FORM WIDGET
+   FORMS
    =============================== */
+
+/* CONTACT FORM WIDGET */
 
 .widget.contactform form {
     display: block;
@@ -656,33 +698,80 @@ ul.twitter {
     cursor: pointer;
 }
 
-/* ===============================
-   TWEET THIS
-   =============================== */
+/*  SIGNUPFORM WIDGET & PROFILE FORM  */
 
-.widget.tweet .tweet {
-  border: none;
-  margin: 10px 0;
+ .widget.signupform, .widget.profile form {
+    display: block;
+    margin-bottom: 20px;
+    background-color: @color-swatch1;
 }
 
-.widget.tweet a {
-  padding: 14px 22px 14px 45px;
-  font-family: @font-swatch7-font-family;
-  font-size: @font-swatch7-font-size;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-  letter-spacing: 1px;
-  .border-radius(3px);
-  background-size: 18px;
-  background-repeat: no-repeat;
-  background-position: 20px center;
+.widget.signupform fieldset, .widget.profile form fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
-.widget.tweet a:hover, .tweet a:active {
-  cursor: pointer;
-  background-color: @font-swatch7-background-color-hover;
+.widget.signupform fieldset label, .widget.profile form fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight:@font-swatch5-font-weight;
+    line-height:@font-swatch5-line-height;
+    color: @font-swatch5-color;
+    letter-spacing: @font-swatch5-letter-spacing;
+    margin: 0;
+}
+
+.widget.signupform fieldset input, .widget.profile form fieldset input {
+    display: inline-block;
+    height: 43px;
+    width: 30%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: darken(@color-swatch1,5%);
+    border: none;
+    .border-radius(3px);
+    @media @mobile {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.widget.signupform fieldset input:focus, .widget.profile form fieldset input:focus {
+    outline: none;
+    box-shadow: 0 0 5px @color-swatch3;
+}
+
+.widget.signupform fieldset button.btn, .widget.profile form fieldset button.btn {
+    height: 43px;
+    position: relative;
+    top: -1px;
+    padding: 3px 22px;
+    display: inline-block;
+    .border-radius(3px);
+    margin: 0;
+    border: none;
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    letter-spacing: 1px;
+    text-decoration: none;
+    @media @tablet {
+      top: -2px;
+    }
+    @media @mobile {
+      padding: 9px 20px;
+      position: inherit;
+      top: 0;
+      height: auto;
+    }
+    &:hover {
+      background-color: @font-swatch7-background-color-hover;
+    }
 }
 
 /* ===============================
@@ -840,14 +929,6 @@ ul.twitter {
   padding-bottom: 20px;
 }
 
-.bk-footer .columns-two-left {
-  text-align: left;
-}
-
-.bk-footer .columns-two-right {
-  text-align: right;
-}
-
 .widget.profile span,
 .widget.profile a {
     display: block;
@@ -862,9 +943,6 @@ ul.twitter {
     color: @color-swatch4;
     text-decoration: none;
 }
-
-/* FOOTER PROFILE - twitter in profile widget*/
-/*  LATEST TWEET IN FOOTER */
 
 .widget.profile .twitter a {
    display: inline;
@@ -922,84 +1000,6 @@ footer .widget.profile .twitter span {
 
 .widget.map {
   border: 1px solid #dddddd;
-}
-
-/* ================================
-   SIGNUPFORM WIDGET & PROFILE FORM
-   ================================ */
-
- .widget.signupform, .widget.profile form {
-    display: block;
-    margin-bottom: 20px;
-    background-color: @color-swatch1;
-}
-
-.widget.signupform fieldset, .widget.profile form fieldset {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
-.widget.signupform fieldset label, .widget.profile form fieldset label {
-    width: 100%;
-    float: left;
-    font-family:@font-swatch5-font-family;
-    font-size:@font-swatch5-font-size;
-    font-weight:@font-swatch5-font-weight;
-    line-height:@font-swatch5-line-height;
-    color: @font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-    margin: 0;
-}
-
-.widget.signupform fieldset input, .widget.profile form fieldset input {
-    display: inline-block;
-    height: 43px;
-    width: 30%;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    background-color: darken(@color-swatch1,5%);
-    border: none;
-    .border-radius(3px);
-    @media @mobile {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
-
-.widget.signupform fieldset input:focus, .widget.profile form fieldset input:focus {
-    outline: none;
-    box-shadow: 0 0 5px @color-swatch3;
-}
-
-.widget.signupform fieldset button.btn, .widget.profile form fieldset button.btn {
-    height: 43px;
-    position: relative;
-    top: -1px;
-    padding: 3px 22px;
-    display: inline-block;
-    .border-radius(3px);
-    margin: 0;
-    border: none;
-    font-family: @font-swatch7-font-family;
-    font-size: @font-swatch7-font-size;
-    font-weight:@font-swatch7-font-weight;
-    background-color: @font-swatch7-background-color;
-    color: @font-swatch7-color;
-    letter-spacing: 1px;
-    text-decoration: none;
-    @media @tablet {
-      top: -2px;
-    }
-    @media @mobile {
-      padding: 16px 20px;
-      position: inherit;
-      top: 0;
-      height: auto;
-    }
-    &:hover {
-      background-color: @font-swatch7-background-color-hover;
-    }
 }
 
 /* ===============================
@@ -1085,7 +1085,6 @@ footer .widget.profile .twitter span {
         }
     }
 }
-
 
 /* ===============================
    MENU SECTIONS
@@ -1415,32 +1414,6 @@ footer .widget.profile .twitter span {
                 color: @color-swatch4;
                 padding: 5px 0;
             }
-            dl {    /* menu-dietary-key */
-                display: inline-block;
-                margin: 5px 0;
-                text-align: block;
-                dt, dd {
-                    display: inline-block;
-                }
-                dt {    /* dietary-icon */
-                    vertical-align: top; 
-                    width: auto;
-                    height: 25px;
-                    border: 0;
-                    background-repeat: no-repeat;
-                    background-size: 20px;
-                    background-position: center;
-                }
-                dd {    /* text for icon */
-                    font-family:@font-swatch5-font-family;
-                    font-size:@font-swatch5-font-size;
-                    font-weight: @font-swatch5-font-weight;
-                    line-height:@font-swatch5-line-height;
-                    color: @font-swatch5-color; 
-                    letter-spacing: @font-swatch5-letter-spacing;
-                    margin: 0 5px -7px;
-                }   
-            }   /* end dl */
         }   /* end menu-info */       
     }
 }
@@ -1505,14 +1478,45 @@ select[name="displayCount"] {
         }
     }/* end blog-post-feature-image-wrap */
     .blog-post-more-link {
-        padding-top: 1.5em;
+        padding: 2.5em 0;
         a {
-          text-decoration: underline;
-          &:hover {
+            padding: 14px 22px;
+            margin: 0 0 10px;
+            border: none;
+            .border-radius(3px);
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight:@font-swatch7-font-weight;
+            background-color: @font-swatch7-background-color;
+            color: @font-swatch7-color;
             text-decoration: none;
-          }
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+                cursor: pointer;
+                text-decoration: none;
+            }
         }
     }
+}
+
+.blog-post-pagination-page {
+  padding: 14px 22px;
+  margin: 0 0 10px;
+  border: none;
+  .border-radius(3px);
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  text-decoration: none;
+}
+
+
+.blog-post-pagination-page:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* ===============================
@@ -1585,7 +1589,7 @@ select[name="displayCount"] {
    =============================== */
 
 .blog-post-sharing {
-    margin: 1.8em 0;
+    margin: 2em 0;
     button {
         .border-radius(3px);
         &.btn.facebook {
@@ -1617,7 +1621,11 @@ time.blog-post-published-date, footer.blog-post-metadata time {
     padding: 1em 0;
     display: inline-block;
     font-size: @font-swatch5-font-size;
-
+    color: @font-swatch5-color;
+    line-height: @font-swatch5-line-height;
+    &:hover {
+        color: @color-swatch4;
+    }
 }
 
 time.blog-post-published-date {
@@ -2157,37 +2165,7 @@ hr.line {
   line-height: bkscale(@font-swatch10-color,0.7);
 }
 
-  /* CLICK TO CALL */
 
-.widget.clicktocall {
-  padding: 10px 0;
-}
-
-.widget.clicktocall a {
-  background-position: 20px center;
-  padding: 20px 20px 20px 47px;
-  margin: 2.2em auto;
-  border: none;
-  font-family: @font-swatch7-font-family;
-  font-size: @font-swatch7-font-size;
-  font-weight:@font-swatch7-font-weight;
-  background-color: @font-swatch7-background-color;
-  color: @font-swatch7-color;
-  text-decoration: none;
-}
-
-.widget.clicktocall a:hover {
-  background-color: @font-swatch7-background-color-hover;
-  background-position: 20px center;
-  cursor: pointer;
-  padding: 20px 20px 20px 47px;
-  text-decoration: none;
-}
-
-  .widget.clicktocall {
-    padding: 20px 0;
-    display:block;
-  }
 
 
 }
@@ -2215,6 +2193,14 @@ hr.line {
   padding-top: 1em;
   margin-top: 3em;
 } 
+
+.bk-footer .columns-two-left {
+  text-align: left;
+}
+
+.bk-footer .columns-two-right {
+  text-align: right;
+}
 
 .bk-footer h1,
 .bk-footer h2,
