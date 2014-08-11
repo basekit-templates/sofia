@@ -1250,7 +1250,7 @@ footer .widget.profile .twitter span {
                     display: block;
                     padding: 1.5em;
                     margin: 1.8em 0 1em;
-                    border: 6px solid fade(@color-swatch2, 35%);
+                    border: 6px solid darken(@color-swatch1,3%);
                     @media @mobile {
                         margin-top: 3.75em;
                     }
@@ -1394,8 +1394,6 @@ footer .widget.profile .twitter span {
         }   /* end menu-items */  
 
         .menu-subsection {
-            padding: 2% 6% 4%;
-            border: 2px dotted fade(@color-swatch5, 30%);
             .menu-items {
                 column-rule: none;
                 -moz-column-rule: none;
@@ -1404,6 +1402,32 @@ footer .widget.profile .twitter span {
                     display: inline-block;
                 }
             }
+            .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+                    padding: 0 2em 0;
+                    margin-bottom: 2em;
+                    position: relative;
+                    border: 1px solid darken(@color-swatch1,20%);
+                    background-color: darken(@color-swatch1,3%);
+                    @media @mobile {
+                        padding: 0 2em 0;
+                        margin-bottom: 2em;
+                    }
+                    .menu-subsection-header {
+                        h2 { /* menu-section-name */
+                            color: @color-swatch3;
+                            background-image: none;
+                            &:before, &:after {
+                                    content: "\2605";
+                                    display: inline-block;
+                                    height: 27px;
+                                    width: 28px;
+                                    margin: 0 10px;
+                                    position: relative;
+                                    top: -1px;
+                            }
+                        }
+                    }
+                } /* end PROMOTED SUB-SECTION */
         }
         .menu-info {
             display: block;
