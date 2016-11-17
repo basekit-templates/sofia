@@ -293,7 +293,7 @@ border-radius: 0;
 
 .lb-data .lb-close:hover {
   background-color: lighten(@color-swatch6,50%);
-  
+
 }
 
  /* IMAGE TITLE */
@@ -621,18 +621,21 @@ ul.twitter {
 
 /* CONTACT FORM WIDGET */
 
-.widget.contactform form {
+.widget.contactform form,
+.advancedcontactform form {
     display: block;
     margin-bottom: 20px;
     background-color: @color-swatch1;
 }
 
-.widget.contactform fieldset {
+.widget.contactform fieldset,
+.advancedcontactform fieldset {
     border: none;
     padding: 0;
 }
 
-.widget.contactform fieldset label {
+.widget.contactform fieldset label,
+.advancedcontactform fieldset label {
     width: 100%;
     float: left;
     font-family:@font-swatch5-font-family;
@@ -643,7 +646,8 @@ ul.twitter {
     letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.contactform fieldset input {
+.widget.contactform fieldset input,
+.advancedcontactform fieldset input {
     height: 40px;
     width: 100%;
     background-color: darken(@color-swatch1,5%);
@@ -657,12 +661,14 @@ ul.twitter {
     padding: 0;
 }
 
-.widget.contactform fieldset input:focus {
+.widget.contactform fieldset input:focus,
+.advancedcontactform fieldset input:focus {
     outline: none;
     box-shadow: 0 0 5px @color-swatch3;
 }
 
-.widget.contactform fieldset textarea {
+.widget.contactform fieldset textarea,
+.advancedcontactform fieldset textarea {
     height: 100px;
     width: 100%;
     background-color: darken(@color-swatch1,5%);
@@ -679,12 +685,14 @@ ul.twitter {
     padding: 0;
 }
 
-.widget.contactform fieldset textarea:focus {
+.widget.contactform fieldset textarea:focus,
+.advancedcontactform fieldset textarea:focus {
     outline: none;
     box-shadow: 0 0 5px @color-swatch3;
 }
 
-.widget.contactform fieldset button.btn {
+.widget.contactform fieldset button.btn,
+.advancedcontactform fieldset button {
     padding: 9px 22px;
     .border-radius(3px);
     margin: 0;
@@ -696,8 +704,9 @@ ul.twitter {
     color: @font-swatch7-color;
     text-decoration: none;
 }
-  
-.widget.contactform fieldset button.btn:hover {
+
+.widget.contactform fieldset button.btn:hover,
+.advancedcontactform fieldset button:hover {
     background-color: @font-swatch7-background-color-hover;
     cursor: pointer;
 }
@@ -1200,7 +1209,7 @@ footer .widget.profile .twitter span {
             list-style: none;
             padding: 0;
             margin: 0;
-        } 
+        }
         li {
             display: block;
         }
@@ -1216,19 +1225,19 @@ footer .widget.profile .twitter span {
             }
             h1 {    /* menu-name menu-section-name */
                 text-align: center;
-                overflow: hidden; 
+                overflow: hidden;
                 color: fade(@font-swatch1-color, 50%);
                 padding: 0.75em 0 0;
              }
             h2 {
                 text-align: center;
-                overflow: hidden; 
+                overflow: hidden;
                 color: fade(@font-swatch1-color, 50%);
             }
             p {    /* menu-description  menu-section-description  menu-availability */
                 margin: 5px 0 10px;
-                text-align: center;       
-            }  
+                text-align: center;
+            }
         }   /* end menu-header - menu-section-header */
         .menu-header {
             padding-top: 0;
@@ -1238,24 +1247,24 @@ footer .widget.profile .twitter span {
         }
         /* ITEMS */
         .menu-items {
-            width: 100%;  
+            width: 100%;
             column-count: 2;
             column-gap: 60px;
             -moz-column-count: 2;
-            -moz-column-gap: 60px; 
+            -moz-column-gap: 60px;
             -webkit-column-count: 2;
-            -webkit-column-gap: 60px;    
+            -webkit-column-gap: 60px;
             @media @mobile {
                 column-count: 1;
                 -moz-column-count: 1;
                 -webkit-column-count: 1;
-            }  
+            }
             li {    /* menu-item and menu-section-item */
                 display: block;
                 position: relative;
                 width: 100%;
                 margin-bottom: 1.25em;
-                @media @mobile { 
+                @media @mobile {
                     margin-bottom: 1.5em;
                     padding-bottom: 1.5em;
                     border-bottom: 2px dotted fade(@color-swatch5, 35%);
@@ -1264,7 +1273,7 @@ footer .widget.profile .twitter span {
                     }
                 }
                 &.menu-section ol {
-                    -webkit-column-count: 1 !important;                    
+                    -webkit-column-count: 1 !important;
                 }   /* end menu-items ol */
                 &.menu-item-promoted {
                     display: block;
@@ -1283,7 +1292,7 @@ footer .widget.profile .twitter span {
                 .inner-item {
                     display: block;
                     width: 100%;
-                    h3 {    /* menu-item-name and menu-section-item-name */  
+                    h3 {    /* menu-item-name and menu-section-item-name */
                         display: inline-block;
                         padding: 0;
                         margin: 0.75em 0 0.25em;
@@ -1319,7 +1328,7 @@ footer .widget.profile .twitter span {
                         padding: 0;
                         margin: 0;
                         float: left;
-                    } 
+                    }
                     ol li p {   /* standard-price and variant-price */
                         font-family:@font-swatch8-font-family;
                         font-size:@font-swatch8-font-size;
@@ -1370,7 +1379,7 @@ footer .widget.profile .twitter span {
                         .spicy-icon.dietary-icon {
                             background-color: darken(green, 10%);
                             color: white;
-                        }  
+                        }
                     }   /* end menu-section-item-dietary-props */
                     h4, ul li p  {   /* nutritional-title and nutritional-prop for section and subsection */
                         font-family:@font-swatch4-font-family;
@@ -1411,7 +1420,7 @@ footer .widget.profile .twitter span {
                     }
                 }   /* end inner-item */
             }   /* end li */
-        }   /* end menu-items */  
+        }   /* end menu-items */
 
         .menu-subsection {
             .menu-items {
@@ -1422,7 +1431,7 @@ footer .widget.profile .twitter span {
                     display: inline-block;
                 }
             }
-            .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+            .menu-subsection-promoted { /* PROMOTED SUB-SECTION */
                     padding: 0 2em 0;
                     margin-bottom: 2em;
                     position: relative;
@@ -1462,7 +1471,7 @@ footer .widget.profile .twitter span {
                 color: @color-swatch4;
                 padding: 5px 0;
             }
-        }   /* end menu-info */       
+        }   /* end menu-info */
     }
 }
 
@@ -1480,7 +1489,7 @@ footer .widget.profile .twitter span {
         display: inline-block;
         @media @mobile {
             width: 100%;
-        }       
+        }
     }
 }
 
@@ -1615,7 +1624,7 @@ select[name="displayCount"] {
           background-color: @font-swatch7-background-color-hover;
         }
     }
-} 
+}
 .blog-post-feature-image-wrap {  /* Blog post feature image */
     background-size: cover;
     background-repeat: no-repeat;
@@ -2136,7 +2145,7 @@ hr.line {
    IPAD WIDTH
    =============================== */
 
-@media only screen and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
     .bk-header {
         margin: 30px 0 30px;
         padding-bottom: 0;
@@ -2275,7 +2284,7 @@ hr.line {
    IPHONE WIDTH
    =============================== */
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
 
   .widget .extendednavigation a.pull {
     top: 11px;
@@ -2300,7 +2309,7 @@ hr.line {
 
 }
 
-@media only screen and (min-width: 1140px) { 
+@media only screen and (min-width: 1140px) {
     .wrapper {
         width: 1024px;
         /* 1140px - 10% for margins */
@@ -2321,7 +2330,7 @@ hr.line {
   border-top: 1px solid @color-swatch6;
   padding-top: 1em;
   margin-top: 3em;
-} 
+}
 
 .bk-footer .columns-two-left {
   text-align: left;
@@ -2355,7 +2364,7 @@ hr.line {
   }
 }
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
   .bk-footer {
     text-align: center;
     padding: 2.5em 0 0;
