@@ -1,5 +1,6 @@
 {
 	"name":"Sofia",
+	"versionTenCompatible": 1,
 	"thumbnail":"sofia.png",
 	"screenshot":"sofia-screenshot.jpg",
 	"templateType":"standard",
